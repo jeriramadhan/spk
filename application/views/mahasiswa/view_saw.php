@@ -6,7 +6,7 @@
             Perhitungan SAW
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Karyawan</a></li>
+            <li><a href="#">Mahasiswa</a></li>
             <li class="active">View SAW</li>
         </ol>
     </section>

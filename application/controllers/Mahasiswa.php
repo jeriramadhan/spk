@@ -1,77 +1,62 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Karyawan extends CI_Controller
+class Mahasiswa extends CI_Controller
 {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('MKaryawan', 'm_karyawan');
+		$this->load->model('MMahasiswa', 'm_mahasiswa');
 		$this->load->model('MKriteria', 'm_kriteria');
 	}
 
 	public function index()
 	{
-		$data = $this->m_karyawan->get_entries();
+		$data = $this->m_mahasiswa->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('karyawan/index', ['data' => $data]);
-		$this->load->view('layout/footer', ['js' => 'karyawan/indexjs']);
+		$this->load->view('mahasiswa/index', ['data' => $data]);
+		$this->load->view('layout/footer', ['js' => 'mahasiswa/indexjs']);
 	}
 
 	public function create()
 	{
 		if (!empty($_POST)) {
-			$this->m_karyawan->insert_entry();
-			redirect('karyawan');
+			$this->m_mahasiswa->insert_entry();
+			redirect('mahasiswa');
 		}
 
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('karyawan/create');
-		$this->load->view('layout/footer', ['js' => 'karyawan/createjs']);
+		$this->load->view('mahasiswa/create');
+		$this->load->view('layout/footer', ['js' => 'mahasiswa/createjs']);
 	}
 
 	public function update($id)
 	{
 		if (!empty($_POST)) {
-			$this->m_karyawan->update_entry();
-			redirect('karyawan');
+			$this->m_mahasiswa->update_entry();
+			redirect('mahasiswa');
 		}
 
-		$data = $this->m_karyawan->get_entries_by_id($id);
+		$data = $this->m_mahasiswa->get_entries_by_id($id);
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('karyawan/update', ['data' => $data]);
-		$this->load->view('layout/footer', ['js' => 'karyawan/updatejs']);
+		$this->load->view('mahasiswa/update', ['data' => $data]);
+		$this->load->view('layout/footer', ['js' => 'mahasiswa/updatejs']);
 	}
 
 	public function delete($id)
 	{
-		$this->m_karyawan->delete_entry($id);
-		redirect('karyawan');
+		$this->m_mahasiswa->delete_entry($id);
+		redirect('mahasiswa');
 	}
 
 	public function view_saw()
 	{
-		$data = $this->m_karyawan->get_entries();
+		$data = $this->m_mahasiswa->get_entries();
 		$kriteria = $this->m_kriteria->get_entries();
 
 		$c = [];
@@ -134,7 +119,7 @@ class Karyawan extends CI_Controller
 
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('karyawan/view_saw', ['perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
-		$this->load->view('layout/footer', ['js' => 'karyawan/view_sawjs']);
+		$this->load->view('mahasiswa/view_saw', ['perhitungan_normalisasi' => $perhitungan_normalisasi, 'perhitungan_bobot' => $perhitungan_bobot]);
+		$this->load->view('layout/footer', ['js' => 'mahasiswa/view_sawjs']);
 	}
 }

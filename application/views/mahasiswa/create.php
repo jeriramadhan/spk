@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            KARYAWAN
+            Mahasiswa
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Karyawan</a></li>
+            <li><a href="#">Mahasiswa</a></li>
             <li class="active">Create</li>
         </ol>
     </section>
@@ -20,7 +20,7 @@
                 <h3 class="box-title">Create New</h3>
             </div>
 
-            <form role="form" action="<?= site_url('karyawan/create') ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('mahasiswa/create') ?>" method="post" style="padding: 10px 20px">
                 <div class="box-body row">
                     <div class="col-md-12 row">
                         <div class="form-group col-md-4">

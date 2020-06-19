@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            KARYAWAN
+            Mahasiswa
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Karyawan</a></li>
+            <li><a href="#">Mahasiswa</a></li>
             <li class="active">Update</li>
         </ol>
     </section>
@@ -20,7 +20,7 @@
                 <h3 class="box-title">Update #<?= $data->nama ?></h3>
             </div>
 
-            <form role="form" action="<?= site_url('karyawan/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('mahasiswa/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
                 <input type="hidden" name="id" value="<?= $data->id ?>" />
                 <div class="box-body row">
                     <div class="col-md-12 row">

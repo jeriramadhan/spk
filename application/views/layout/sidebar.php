@@ -16,8 +16,8 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active"><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
-            <li><a href="<?= site_url('karyawan') ?>"><i class="fa fa-user"></i> <span>Karyawan</span></a></li>
+            <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
+            <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-user"></i> <span>Mahasiswa</span></a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
