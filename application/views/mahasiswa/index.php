@@ -1,24 +1,20 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            KARYAWAN
+            Mahasiswa
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Karyawan</a></li>
+            <li><a href="#">Mahasiswa</a></li>
             <li class="active">Index</li>
         </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
 
-        <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <a href="<?= site_url('karyawan/view_saw') ?>" class="btn btn-primary">Perangkingan</a>
-                <a href="<?= site_url('karyawan/create') ?>" class="btn btn-success">Create</a>
+                <a href="<?= site_url('mahasiswa/view_saw') ?>" class="btn btn-primary">Perangkingan</a>
+                <a href="<?= site_url('mahasiswa/create') ?>" class="btn btn-success">Create</a>
             </div>
 
             <div class="box-body">
@@ -54,17 +50,14 @@
                             echo '<td style="text-align:center">' . $v->c8 . '</td>';
                             echo '<td style="text-align:center">' . $v->c9 . '</td>';
                             echo '<td style="text-align:center">
-                            <a href="' . site_url('karyawan/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
-                            <a href="' . site_url('karyawan/delete/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            <a href="' . site_url('mahasiswa/update/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
+                            <a href="' . site_url('mahasiswa/delete/' . $v->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
                             echo '</tr>';
                         } ?>
                     </tbody>
                 </table>
             </div>
         </div>
-        <!-- /.box -->
 
     </section>
-    <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->

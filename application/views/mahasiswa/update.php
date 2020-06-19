@@ -1,26 +1,22 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            KARYAWAN
+            Mahasiswa
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Karyawan</a></li>
+            <li><a href="#">Mahasiswa</a></li>
             <li class="active">Update</li>
         </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
 
-        <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
                 <h3 class="box-title">Update #<?= $data->nama ?></h3>
             </div>
 
-            <form role="form" action="<?= site_url('karyawan/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('mahasiswa/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
                 <input type="hidden" name="id" value="<?= $data->id ?>" />
                 <div class="box-body row">
                     <div class="col-md-12 row">
@@ -78,16 +74,12 @@
                         <input type="number" class="form-control" name="c9" value="<?= $data->c9 ?>" placeholder="Penyesuaian Diri dalam Lingkungan" required>
                     </div>
                 </div>
-                <!-- /.box-body -->
 
                 <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
         </div>
-        <!-- /.box -->
 
     </section>
-    <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->

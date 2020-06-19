@@ -1,6 +1,6 @@
 <?php
 
-class MKaryawan extends CI_Model
+class MMahasiswa extends CI_Model
 {
     public $nama;
     public $c1;
@@ -17,13 +17,13 @@ class MKaryawan extends CI_Model
 
     public function get_entries()
     {
-        $query = $this->db->get('karyawan');
+        $query = $this->db->get('mahasiswa');
         return $query->result();
     }
 
     public function get_entries_by_id($id)
     {
-        $query = $this->db->get_where('karyawan', ['id' => $id]);
+        $query = $this->db->get_where('mahasiswa', ['id' => $id]);
         return $query->row();
     }
 
@@ -42,7 +42,7 @@ class MKaryawan extends CI_Model
         $this->created_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();
-        $this->db->insert('karyawan', $this);
+        $this->db->insert('mahasiswa', $this);
         $this->db->trans_complete();
     }
 
@@ -61,14 +61,14 @@ class MKaryawan extends CI_Model
         $this->updated_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();
-        $this->db->update('karyawan', $this, ['id' => $_POST['id']]);
+        $this->db->update('mahasiswa', $this, ['id' => $_POST['id']]);
         $this->db->trans_complete();
     }
 
     public function delete_entry($id)
     {
         $this->db->trans_start();
-        $this->db->delete('karyawan', ['id' => $id]);
+        $this->db->delete('mahasiswa', ['id' => $id]);
         $this->db->trans_complete();
     }
 }
