@@ -1,6 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
             Mahasiswa
@@ -11,10 +9,8 @@
         </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
 
-        <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
                 <h3 class="box-title">Create New</h3>
@@ -77,16 +73,12 @@
                         <input type="number" class="form-control" name="c9" placeholder="Penyesuaian Diri dalam Lingkungan" required>
                     </div>
                 </div>
-                <!-- /.box-body -->
 
                 <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
         </div>
-        <!-- /.box -->
 
     </section>
-    <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
