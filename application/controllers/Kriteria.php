@@ -42,4 +42,12 @@ class Kriteria extends CI_Controller
 		$this->load->view('kriteria/index', ['data' => $data]);
 		$this->load->view('layout/footer', ['js' => 'kriteria/indexjs']);
 	}
+	 public function editKriteria($id){
+		//  $id['id'] = $this->input->post('id');
+		 $data = array(
+			 'keterangan' => $this->input->post("kriteria")
+		 );
+		 $this->m_kriteria->edit($data,$id );
+	 }
+
 }

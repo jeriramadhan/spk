@@ -27,4 +27,10 @@ class MKriteria extends CI_Model
         $this->db->update('kriteria', $this, ['id' => $id]);
         $this->db->trans_complete();
     }
+
+    public function edit($data, $id){
+        //ini contoh gua ngepush
+    }
+
+
 }
