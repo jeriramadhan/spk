@@ -17,7 +17,11 @@
         <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Isi Konten</h3>
+                <h3 class="box-title">Selamat Datang Admin</h3>
+                <div class="content">
+                    <h1 style="text-align:center">SISTEM PENDUKUNG KEPUTUSAN</h1>
+                    <h1 style="text-align:center">PENERIMAAN ANGGOTA BARU BPRS ERAFM UNJ</h1>
+                    <h3 style="text-align:center">- HRD ERAFM UNJ -</h3>
             </div>
 
         </div>

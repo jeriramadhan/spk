@@ -16,11 +16,11 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
-            <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-user"></i> <span>Mahasiswa</span></a></li>
             <!-- ini fungsi bikin menu -->
             <li><a href="<?= site_url('menu') ?>"><i class="fa fa-user"></i> <span>Home</span></a></li>
             <li><a href="<?= site_url('pendaftar') ?>"><i class="fa fa-user"></i> <span>Pendaftar</span></a></li>
+            <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-user"></i> <span>Mahasiswa</span></a></li>
+            <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
             <li><a href="<?= site_url('atribut') ?>"><i class="fa fa-user"></i> <span>Atribut</span></a></li>
             <li><a href="<?= site_url('ranking') ?>"><i class="fa fa-user"></i> <span>Ranking</span></a></li>
             <li><a href="<?= site_url('hasil') ?>"><i class="fa fa-user"></i> <span>Hasil</span></a></li>
