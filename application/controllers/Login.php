@@ -11,7 +11,11 @@
     }
 
     public function index() {
-      $this->load->view('login/index');
+      if($this->session->userdata('masuk')==true){
+        redirect('login/berhasillogin');
+      }else{
+         $this->load->view('login/index');
+      }
     }
 
     function auth(){
