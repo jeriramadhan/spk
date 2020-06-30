@@ -31,7 +31,7 @@ class Menu extends CI_Controller
 	{
 		if (!empty($_POST)) {
 			$this->m_pendaftar->insert_entry();
-			redirect('menu/pendaftar');
+			redirect('menu');
 		}
 
 		$this->load->view('layout/header');
@@ -40,24 +40,24 @@ class Menu extends CI_Controller
 		$this->load->view('layout/footer', ['js' => 'menu/createjs']);
 	}
 
-	public function updatePendaftar($id)
+	public function update($id)
 	{
 		if (!empty($_POST)) {
-			$this->m_pendaftar->update_entry();
-			redirect('menu/pendaftar');
+			$this->m_mahasiswa->update_entry();
+			redirect('mahasiswa');
 		}
 
 		$data = $this->m_mahasiswa->get_entries_by_id($id);
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('menu/updatependaftar', ['data' => $data]);
-		$this->load->view('layout/footer', ['js' => 'menu/updatejs']);
+		$this->load->view('mahasiswa/update', ['data' => $data]);
+		$this->load->view('layout/footer', ['js' => 'mahasiswa/updatejs']);
 	}
 
 	public function delete($id)
 	{
 		$this->m_mahasiswa->delete_entry($id);
-		redirect('menu/pendaftar');
+		redirect('mahasiswa');
 	}
 
 }

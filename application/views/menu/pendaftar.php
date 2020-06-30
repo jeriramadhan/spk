@@ -16,7 +16,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <a href="<?= site_url('') ?>" class="btn btn-success">Tambah</a>
+                <a href="<?= site_url('menu/createPendaftar') ?>" class="btn btn-success">Tambah</a>
             </div>
 
             <div class="box-body">
