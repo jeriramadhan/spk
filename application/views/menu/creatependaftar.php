@@ -25,20 +25,20 @@
                         </div>
                         <!-- ganti sesuai kolom -->
                         <div class="form-group col-md-4">
-                            <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Enter Nama" required>
+                            <label>Prodi</label>
+                            <input type="text" class="form-control" name="prodi" placeholder="Enter Prodi" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Enter Nama" required>
+                            <label>Fakultas</label>
+                            <input type="text" class="form-control" name="fakultas" placeholder="Enter Fakultas" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Enter Nama" required>
+                            <label>No Telp</label>
+                            <input type="text" class="form-control" name="no_hp" placeholder="Enter No Telp" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Enter Nama" required>
+                            <label>Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="Enter Email" required>
                         </div>
                     </div>
                 </div>
