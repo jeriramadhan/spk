@@ -9,8 +9,7 @@ class Mahasiswa extends CI_Controller
 	{
 		parent::__construct();
 		if($this->session->userdata('masuk') !=TRUE){
-            $url=base_url('login');
-            redirect($url);
+            redirect('login');
         };
 		$this->load->model('MMahasiswa', 'm_mahasiswa');
 		$this->load->model('MKriteria', 'm_kriteria');

@@ -23,9 +23,8 @@ class Kriteria extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-				if($this->session->userdata('masuk') !=TRUE){
-            $url=base_url('login');
-            redirect($url);
+		if($this->session->userdata('masuk') !=TRUE){
+            redirect('login');
         };
 		$this->load->model('MKriteria', 'm_kriteria');
 	}
