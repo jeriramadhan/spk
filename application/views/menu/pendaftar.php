@@ -24,9 +24,13 @@
                     <thead>
                         <tr>
                           <!-- bikin paramater pendaftar yang lu mau masukkin -->
-                            <th width="50" style="text-align:center">No</th>
+                            <th width="15" style="text-align:center">No</th>
                             <th width="250" style="text-align:center">Nama</th>
-                            <th width="100" style="text-align:center">Action</th>
+                            <th width="150" style="text-align:center">Prodi</th>
+                            <th width="100" style="text-align:center">Fakultas</th>
+                            <th width="100" style="text-align:center">No Telp</th>
+                            <th width="150" style="text-align:center">Email</th>
+                            <th width="50" style="text-align:center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
