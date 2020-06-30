@@ -11,7 +11,7 @@ class Menu extends CI_Controller
             redirect($url);
 				};
 			}
-			
+
   public function index() {
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
@@ -22,7 +22,7 @@ class Menu extends CI_Controller
     public function pendaftar() {
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('menu/home');
+		$this->load->view('menu/pendaftar');
 		$this->load->view('layout/footer', ['js' => 'menu/indexjs']);
 	}
 }
