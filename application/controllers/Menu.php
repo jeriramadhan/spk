@@ -47,7 +47,7 @@ class Menu extends CI_Controller
 			redirect('menu/pendaftar');
 		}
 
-		$data = $this->m_mahasiswa->get_entries_by_id($id);
+		$data = $this->m_pendaftar->get_entries_by_id($id);
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
 		$this->load->view('menu/updatependaftar', ['data' => $data]);
@@ -56,7 +56,7 @@ class Menu extends CI_Controller
 
 	public function delete($id)
 	{
-		$this->m_mahasiswa->delete_entry($id);
+		$this->m_pendaftar->delete_entry($id);
 		redirect('menu/pendaftar');
 	}
 
