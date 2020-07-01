@@ -16,7 +16,7 @@
                 <h3 class="box-title">Create New</h3>
             </div>
 
-            <form role="form" action="<?= site_url('menu/createPendaftar') ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('') ?>" method="post" style="padding: 10px 20px">
                 <div class="box-body row">
                     <div class="col-md-12 row">
                         <div class="form-group col-md-4">
