@@ -43,8 +43,6 @@
                 <div class="footer"><a href="#">Forgot your password?</a></div>
               </form>
             </div>
-            
-              
             </div>
           </div>
           <!-- Portfolio--><a id="portfolio" href="http://pkshopy.com/farooqshad/" title="View my portfolio!"><i class="fa fa-link"></i></a>
