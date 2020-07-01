@@ -13,7 +13,7 @@
 
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update #<?= $data->nama ?></h3>
+                <h3 class="box-title">Update <?= $data->nama ?></h3>
             </div>
 
             <form role="form" action="<?= site_url('mahasiswa/update/' . $data->id) ?>" method="post" style="padding: 10px 20px">
@@ -22,7 +22,7 @@
                     <div class="col-md-12 row">
                         <div class="form-group col-md-4">
                             <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" value="<?= $data->nama ?>" placeholder="Enter Nama" required>
+                            <input type="text" class="form-control" name="nama" value="<?= $data->nama ?>" placeholder="Enter Nama">
                         </div>
                     </div>
                     <div class="form-group col-md-12">
