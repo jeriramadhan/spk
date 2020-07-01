@@ -27,6 +27,12 @@ class MMahasiswa extends CI_Model
         return $query->row();
     }
 
+    public function get_nama()
+    {
+        $query = $this->db->get('pendaftar');
+        return $query->result();
+    }
+
     public function insert_entry()
     {
         $this->nama         = $_POST['nama'];

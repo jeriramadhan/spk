@@ -21,9 +21,10 @@ class Menu extends CI_Controller
   }
   
     public function pendaftar() {
+		$data = $this->m_pendaftar->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('menu/pendaftar');
+		$this->load->view('menu/pendaftar', ['data' => $data]);
 		$this->load->view('layout/footer', ['js' => 'menu/indexjs']);
 	}
 
@@ -54,7 +55,7 @@ class Menu extends CI_Controller
 		$this->load->view('layout/footer', ['js' => 'menu/updatejs']);
 	}
 
-	public function delete($id)
+	public function deletePendaftar($id)
 	{
 		$this->m_pendaftar->delete_entry($id);
 		redirect('menu/pendaftar');

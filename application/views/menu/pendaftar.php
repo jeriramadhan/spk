@@ -34,6 +34,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($data as $k => $resdata) {
+                            echo '<tr>';
+                            echo '<td style="text-align:center">' . ($k + 1) . '</td>';
+                            echo '<td>' . $resdata->nama . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->prodi . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->fakultas . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->no_hp . '</td>';
+                            echo '<td style="text-align:center">' . $resdata->email . '</td>';
+                            echo '<td style="text-align:center">
+                            <a href="' . site_url('menu/updatePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Update"><i class="fa fa-pencil"></i></a>&nbsp;
+                            <a href="' . site_url('menu/deletePendaftar/' . $resdata->id) . '" style="text-decoration:none;color:black" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>';
+                            echo '</tr>';
+                        } ?>
                     </tbody>
                 </table>
             </div>
