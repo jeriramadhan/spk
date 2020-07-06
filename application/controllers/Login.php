@@ -14,10 +14,8 @@
       if($this->session->userdata('masuk')==true){
         redirect('login/berhasillogin');
       }else{
-        // ini contoh masukkin header nya
-        $this->load->view('layout/header_login'); //headernya disini
+        $this->load->view('layout/header_umum'); //headernya disini
         $this->load->view('login/index');
-	  	  $this->load->view('layout/footer', ['js' => 'menu/indexjs']);
 
       }
     }

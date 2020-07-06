@@ -1,40 +1,23 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-
-<html>
-
-<head>
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
 
 <body id="LoginForm">
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
-
-  <!-- Ini gausah -->
-
-    <!-- <nav class="navbar-invers">
-    <h1>Sistem Pendukung Keputusan ERAFM UNJ</h1>
-    <h3> Login Admin </h3>
-    </nav> -->
     <div class="login-form">
       <div class="main-div">
         <div class="panel">
           <h2>Admin Login</h2>
         </div>
         <form class="js-validation-signin px-30" action="<?php echo base_url().'index.php/login/auth'?>" method="post">
+
           <div class="form-group">
             <label for="login-username">Username</label>
             <input type="text" class="form-control" id="login-username" placeholder="Username" name="username" required>
             <label for="login-password">Password</label>
-            <input type="password" class="form-control" id="login-password" placeholder="Password" name="password" required>
+            <input type="password" class="form-control" id="login-password" name="password" required>
+
           </div>
           <button type="submit" class="btn btn-primary">Login</button>
+
         </form>
       </div>
     </div>
@@ -55,7 +38,6 @@
     padding: 10px;
   }
 
-
   .form-heading {
     color: #fff;
     font-size: 23px;
@@ -63,7 +45,7 @@
 
   .panel h2 {
     color: #444444;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 8px 0;
   }
 
@@ -109,7 +91,7 @@
     background: #f0ad4e none repeat scroll 0 0;
     border-color: #f0ad4e;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
     height: 50px;
     line-height: 50px;
