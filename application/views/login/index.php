@@ -55,28 +55,6 @@
     padding: 10px;
   }
 
-  .navbar-invers {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #4682B4;
-  }
-
-  h1 {
-    float: left;
-    color: #fff;
-    text-align: center;
-    padding: 14px;
-    font-size: 15px;
-  }
-  
-  h3 {
-    float:right;
-    color: #fff;
-    text-align: center;
-    padding: 14px;
-    font-size: 13px;
-  }
 
   .form-heading {
     color: #fff;
@@ -85,7 +63,7 @@
 
   .panel h2 {
     color: #444444;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 0 8px 0;
   }
 
@@ -131,7 +109,7 @@
     background: #f0ad4e none repeat scroll 0 0;
     border-color: #f0ad4e;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
     height: 50px;
     line-height: 50px;
