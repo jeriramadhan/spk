@@ -1,54 +1,41 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 
 <html>
 
 <head>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body id="login">
+<body id="LoginForm">
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
+    <nav class="navbar-invers">
+    <h1>Sistem Pendukung Keputusan ERAFM UNJ</h1>
+    <h3> Login Admin </h3>
+    </nav>
     <div class="login-form">
       <div class="main-div">
         <div class="panel">
-        <h3 class="text-center text-white pt-5">Admin Login</h3>
+          <h2>Admin Login</h2>
         </div>
-        <form class="js-validation-signin " action="<?php echo base_url().'index.php/login/auth'?>" method="post">
-
-        <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text-info">Login </h3>
-                            <div class="form-group">
-                                <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="username" id="login-username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-info">Password:</label><br>
-                                <input type="password" name="password" id="login-password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <form class="js-validation-signin px-30" action="<?php echo base_url().'index.php/login/auth'?>" method="post">
+          <div class="form-group">
+            <label for="login-username">Username</label>
+            <input type="text" class="form-control" id="login-username" placeholder="Username" name="username" required>
+            <label for="login-password">Password</label>
+            <input type="password" class="form-control" id="login-password" placeholder="Password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
         </form>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -57,25 +44,120 @@
 </html>
 
 <style>
-  body {
+  body#LoginForm {
+    /* background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+  }
+
+  .navbar-invers {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  height: 100vh;
-}
-#login .container #login-row #login-column #login-box {
-  margin-top: 120px;
-  max-width: 320px;
-  height: 320px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
-  margin: 6rem auto 8.1rem auto;
-  width: 329px;
-}
-#login .container #login-row #login-column #login-box #login-form {
-  padding: 20px;
-}
-#login .container #login-row #login-column #login-box #login-form #register-link {
-  margin-top: -85px;
-}
+  overflow: hidden;
+  background-color: #4682B4;
+  }
+
+  h1 {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+  }
+  
+  h3 {
+    float:right;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .form-heading {
+    color: #fff;
+    font-size: 23px;
+  }
+
+  .panel h2 {
+    color: #444444;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+  }
+
+  .panel p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  .login-form .form-control {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .main-div {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 2px;
+    margin: 10px auto 30px;
+    max-width: 38%;
+    padding: 50px 70px 70px 71px;
+  }
+
+  .login-form .form-group {
+    margin-bottom: 10px;
+  }
+
+  .login-form {
+    text-align: center;
+  }
+
+  .forgot a {
+    color: #777777;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .login-form .btn.btn-primary {
+    background: #f0ad4e none repeat scroll 0 0;
+    border-color: #f0ad4e;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .forgot {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .botto-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin: auto;
+  }
+
+  .login-form .btn.btn-primary.reset {
+    background: #ff9900 none repeat scroll 0 0;
+  }
+
+  .back {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .back a {
+    color: #444444;
+    font-size: 13px;
+    text-decoration: none;
+  }
 </style>
