@@ -15,10 +15,13 @@
 <body id="LoginForm">
   <div class="container">
     <!-- <h1 class="form-heading">login Form</h1> -->
-    <nav class="navbar-invers">
+
+  <!-- Ini gausah -->
+
+    <!-- <nav class="navbar-invers">
     <h1>Sistem Pendukung Keputusan ERAFM UNJ</h1>
     <h3> Login Admin </h3>
-    </nav>
+    </nav> -->
     <div class="login-form">
       <div class="main-div">
         <div class="panel">
