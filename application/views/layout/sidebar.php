@@ -22,7 +22,7 @@
             <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-user"></i> <span>Mahasiswa</span></a></li>
             <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
             <li><a href="<?= site_url('atribut') ?>"><i class="fa fa-user"></i> <span>Atribut</span></a></li>
-            <li><a href="<?= site_url('ranking') ?>"><i class="fa fa-user"></i> <span>Ranking</span></a></li>
+            <li><a href="<?= site_url('rangking') ?>"><i class="fa fa-user"></i> <span>Rangking</span></a></li>
             <li><a href="<?= site_url('hasil') ?>"><i class="fa fa-user"></i> <span>Hasil</span></a></li>
             <li><a href="<?= site_url('logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li>
              <!-- sampe sini, lu bikin dari tag <li> sampe </li> sesuai sama menu yang lu inginkan  -->
