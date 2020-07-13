@@ -3,7 +3,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            ATRIBUT
+            Atribut
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Atribut</a></li>

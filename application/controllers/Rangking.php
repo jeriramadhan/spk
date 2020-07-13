@@ -11,13 +11,13 @@ class Rangking extends CI_Controller
 		if($this->session->userdata('masuk') !=TRUE){
             redirect('login');
         };
-		$this->load->model('MRangking', 'm_rangking');
-		$this->load->model('MRangking', 'm_atribut');
+	//	$this->load->model('MRangking', 'm_rangking');
+	//	$this->load->model('MRangking', 'm_atribut');
 	}
 
 	public function index()
 	{
-		$data = $this->m_rangking->get_entries();
+	//	$data = $this->m_rangking->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
 		$this->load->view('rangking/index', ['data' => $data]);

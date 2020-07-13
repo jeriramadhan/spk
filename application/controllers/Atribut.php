@@ -26,12 +26,12 @@ class Atribut extends CI_Controller
 		if($this->session->userdata('masuk') !=TRUE){
             redirect('login');
         };
-		$this->load->model('MAtribut', 'm_atribut');
+	//	$this->load->model('MAtribut', 'm_atribut');
 	}
 
 	public function index()
 	{
-		$data = $this->m_atribut->get_entries();
+	//	$data = $this->m_atribut->get_entries();
 
 		if (!empty($_POST)) {
 			foreach ($data as $i => $d) {
