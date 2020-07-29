@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Atribut
+            Kriteria
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Atribut</a></li>
+            <li><a href="#">Kriteria</a></li>
             <li class="active">Index</li>
         </ol>
     </section>
@@ -17,15 +17,15 @@
         <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update Atribut</h3>
+                <h3 class="box-title">Kriteria</h3>
             </div>
 
-            <form role="form" action="<?= site_url('kriteria/index') ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('kriteria/keterangan') ?>" method="post" style="padding: 10px 20px">
                 <div class="box-body row">
                     <?php foreach ($data as $i => $d) { ?>
                         <div class="form-group col-md-4">
-                            <label><?= $d->keterangan ?></label>
-                            <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $d->bobot ?>" placeholder="Enter <?= $d->kriteria ?>" required>
+                            <label>Kriteria <?= $i + 1 ?></label>
+                            <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $d->keterangan ?>" placeholder="Enter Kriteria <?= $i + 1 ?>" required>
                         </div>
                     <?php } ?>
                 </div>

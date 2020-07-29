@@ -21,7 +21,12 @@
                     <div class="col-md-12 row">
                         <div class="form-group col-md-4">
                             <label>Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Enter Nama" required>
+                              <select class="form-control" id="nama" name="nama">
+                                  <?php foreach ($getUser as $row) {
+                                echo '<option  value="' . $row->nama . '">' . $row->nama . '</option>';
+                            }
+                            ?>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group col-md-12">
