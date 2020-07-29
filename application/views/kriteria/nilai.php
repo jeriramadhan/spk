@@ -24,7 +24,9 @@
                 <div class="box-body row">
                     <?php foreach ($data as $d) { ?>
                         <div class="form-group col-md-4">
-                            <label>Nilai Batas Kelulusan Saat ini = <?= $d->nilai_batas ?></label>
+                            <label>Nilai Batas Kelulusan Saat ini = <span class="label label-info"><?= $d->nilai_batas ?></span> </label>
+                            <br><br>
+                            <label>Ubah Nilai Batas</label><br>
                             <input type="text" class="form-control" name="nilai_batas" value="<?= $d->nilai_batas ?>" placeholder="Enter Nilai" required>
                         </div>
                     <?php } ?>

@@ -24,6 +24,21 @@
             <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Atribut</span></a></li>
             <li><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-user"></i> <span>Hasil</span></a></li>            
             <li><a href="<?= site_url('menu/ranking') ?>"><i class="fa fa-user"></i> <span>Ranking</span></a></li>
+                    <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Pengaturan</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?= site_url('kriteria/nilai') ?>"><i class="fa fa-circle-o"></i> Batas Kelulusan</a></li>
+            <li><a href="<?= site_url('kriteria/status') ?>"><i class="fa fa-circle-o"></i> Status Pengumuman</a></li>
+            <!-- <li><a href="<?= site_url('kriteria/keterangan') ?>"><i class="fa fa-circle-o"></i> Keterangan</a></li> -->
+            
+          </ul>
+        </li>
             <li><a href="<?= site_url('login/logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li>
              <!-- sampe sini, lu bikin dari tag <li> sampe </li> sesuai sama menu yang lu inginkan  -->
         </ul>

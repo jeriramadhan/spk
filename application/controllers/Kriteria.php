@@ -38,7 +38,7 @@ class Kriteria extends CI_Controller
 			foreach ($data as $i => $d) {
 				$this->m_kriteria->update_keterangan($d->id, $_POST['c' . ($i + 1)]);
 			}
-			redirect('kriteria');
+			redirect('kriteria/keterangan');
 		}
 
 		$this->load->view('layout/header');

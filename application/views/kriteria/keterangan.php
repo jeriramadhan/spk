@@ -24,7 +24,7 @@
                 <div class="box-body row">
                     <?php foreach ($data as $i => $d) { ?>
                         <div class="form-group col-md-4">
-                            <label>Kriteria <?= $i + 1 ?></label>
+                            <label>Kriteria <?= $i + 1?>: <?= $d->keterangan?></label>
                             <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $d->keterangan ?>" placeholder="Enter Kriteria <?= $i + 1 ?>" required>
                         </div>
                     <?php } ?>

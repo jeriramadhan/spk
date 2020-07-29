@@ -24,14 +24,17 @@
                 <div class="box-body row">
                     <?php foreach ($data as $d) { ?>
                         <div class="form-group col-md-4">
-                            <label>Status Pengumuman = <?php if($d->status_pengumuman == 1){
-                              echo "Belum Pengumuman";
-                            }else{
-                              echo "Sedang Di Umumkan";
+                            <label>Status Pengumuman Saat Ini = <?php if($d->status_pengumuman == 1){ ?>
+                             <span class="label label-warning">Belum Diumumkan</span><?php
+                            }else{ ?>
+                              <span class="label label-success">Sedang Diumumkan</span><?php
                             }  ?></label>
+                            <br><br>
+                            <label>Ubah Status Pengumuman</label>
+                            <br>
                           <select id="status_pengumuman" name="status_pengumuman">
-                            <option value="1">Belum Pengumuman</option>
-                            <option value="2">Sedang Diumumkan</option>
+                            <option value="1">Tutup Pengumuman</option>
+                            <option value="2">Umumkan</option>
                           </select>
                         </div>
                     <?php } ?>
