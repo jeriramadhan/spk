@@ -3,10 +3,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Atribut
+            Nilai Batas Kelulusan
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Atribut</a></li>
+            <li><a href="#">Nilai</a></li>
             <li class="active">Index</li>
         </ol>
     </section>
@@ -17,15 +17,15 @@
         <!-- Default box -->
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Update Atribut</h3>
+                <h3 class="box-title">Nilai Batas</h3>
             </div>
 
-            <form role="form" action="<?= site_url('kriteria/index') ?>" method="post" style="padding: 10px 20px">
+            <form role="form" action="<?= site_url('kriteria/nilai') ?>" method="post" style="padding: 10px 20px">
                 <div class="box-body row">
-                    <?php foreach ($data as $i => $d) { ?>
+                    <?php foreach ($data as $d) { ?>
                         <div class="form-group col-md-4">
-                            <label><?= $d->keterangan ?></label>
-                            <input type="text" class="form-control" name="c<?= $i + 1 ?>" value="<?= $d->bobot ?>" placeholder="Enter <?= $d->kriteria ?>" required>
+                            <label>Nilai Batas Kelulusan Saat ini = <?= $d->nilai_batas ?></label>
+                            <input type="text" class="form-control" name="nilai_batas" value="<?= $d->nilai_batas ?>" placeholder="Enter Nilai" required>
                         </div>
                     <?php } ?>
                 </div>
@@ -35,10 +35,12 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
+
+
         </div>
         <!-- /.box -->
 
     </section>
     <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
+<!-- /.content-wrapper --> 

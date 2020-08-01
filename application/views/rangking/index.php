@@ -1,24 +1,22 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Rangking
+            Hasil Ranking
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#">Rangking</a></li>
-            <li class="active">Index</li>
+            <li><a href="#">Menu</a></li>
+            <li class="active">Ranking</li>
         </ol>
     </section>
 
     <section class="content">
-
         <div class="box box-primary">
             <div class="box-header with-border">
                 <a href="<?= site_url('rangking/view_saw') ?>" class="btn btn-primary">Perangkingan</a>
                 <a href="<?= site_url('rangking/create') ?>" class="btn btn-success">Tambah</a>
             </div>
-
             <div class="box-body">
-                <table id="table" class="table table-bordered table-hover">
+                <table id="table2" class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <th width="50" style="text-align:center">No</th>

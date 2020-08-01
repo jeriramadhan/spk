@@ -13,6 +13,7 @@ class Mahasiswa extends CI_Controller
         };
 		$this->load->model('MMahasiswa', 'm_mahasiswa');
 		$this->load->model('MKriteria', 'm_kriteria');
+		$this->load->model('MPendaftar', 'm_pendaftar');
 	}
 
 	public function index()
@@ -30,10 +31,10 @@ class Mahasiswa extends CI_Controller
 			$this->m_mahasiswa->insert_entry();
 			redirect('mahasiswa');
 		}
-
+		$data['getUser'] = $this->m_pendaftar->get_entries();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('mahasiswa/create');
+		$this->load->view('mahasiswa/create',$data);
 		$this->load->view('layout/footer', ['js' => 'mahasiswa/createjs']);
 	}
 

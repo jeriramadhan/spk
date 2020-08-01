@@ -8,10 +8,6 @@ class MMahasiswa extends CI_Model
     public $c3;
     public $c4;
     public $c5;
-    public $c6;
-    public $c7;
-    public $c8;
-    public $c9;
     public $created_at;
     public $updated_at;
 
@@ -27,6 +23,12 @@ class MMahasiswa extends CI_Model
         return $query->row();
     }
 
+    public function get_nama()
+    {
+        $query = $this->db->get('pendaftar');
+        return $query->result();
+    }
+    
     public function insert_entry()
     {
         $this->nama         = $_POST['nama'];
@@ -35,10 +37,6 @@ class MMahasiswa extends CI_Model
         $this->c3           = $_POST['c3'];
         $this->c4           = $_POST['c4'];
         $this->c5           = $_POST['c5'];
-        $this->c6           = $_POST['c6'];
-        $this->c7           = $_POST['c7'];
-        $this->c8           = $_POST['c8'];
-        $this->c9           = $_POST['c9'];
         $this->created_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();
@@ -54,10 +52,6 @@ class MMahasiswa extends CI_Model
         $this->c3           = $_POST['c3'];
         $this->c4           = $_POST['c4'];
         $this->c5           = $_POST['c5'];
-        $this->c6           = $_POST['c6'];
-        $this->c7           = $_POST['c7'];
-        $this->c8           = $_POST['c8'];
-        $this->c9           = $_POST['c9'];
         $this->updated_at   = date('Y-m-d H:i:s');
 
         $this->db->trans_start();
