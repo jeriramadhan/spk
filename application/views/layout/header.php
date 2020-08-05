@@ -40,9 +40,9 @@
             <!-- Logo -->
             <a href="<?= site_url('menu');?>"class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>BPRS ERAFM-UNJ</span>
+                <span class="logo-mini"><b>F</b>SAW</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>BPRS ERAFM-UNJ</span>
+                <span class="logo-lg"> BPRS ERAFM-UNJ</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
