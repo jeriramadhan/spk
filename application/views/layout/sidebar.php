@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?= base_url('/assets/AdminLTE-2.4.10/dist/img/avatar.png') ?>" class="img-circle" alt="User Image">
+                <img src="<?= "http://1.bp.blogspot.com/-Ve7HYGbv3V4/UZBwYocVTpI/AAAAAAAAAEQ/eeNx-WBo9ko/s1600/EraFM.png" ?>" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p><?php echo $this->session->userdata('nama');?></p>
