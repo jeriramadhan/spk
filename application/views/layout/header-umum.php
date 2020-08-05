@@ -65,7 +65,7 @@
             <div class="form-group">
               <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
             </div>
-          </form>  -->
+          </form> -->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?= site_url('login')?>">Login Admin</a></li>
             <!-- <li class="dropdown">
