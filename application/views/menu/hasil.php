@@ -25,10 +25,6 @@
                             <th style="text-align:center">C3</th>
                             <th style="text-align:center">C4</th>
                             <th style="text-align:center">C5</th>
-                            <th style="text-align:center">C6</th>
-                            <th style="text-align:center">C7</th>
-                            <th style="text-align:center">C8</th>
-                            <th style="text-align:center">C9</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,10 +37,6 @@
                             echo '<td style="text-align:center">' . $v['c3'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c4'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c5'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c6'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c7'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c8'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c9'] . '</td>';
                             echo '</tr>';
                         } ?>
                     </tbody>
@@ -67,10 +59,6 @@
                             <th style="text-align:center">C3</th>
                             <th style="text-align:center">C4</th>
                             <th style="text-align:center">C5</th>
-                            <th style="text-align:center">C6</th>
-                            <th style="text-align:center">C7</th>
-                            <th style="text-align:center">C8</th>
-                            <th style="text-align:center">C9</th>
                             <th style="text-align:center">Total</th>
                         </tr>
                     </thead>
@@ -84,10 +72,6 @@
                             echo '<td style="text-align:center">' . $v['c3'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c4'] . '</td>';
                             echo '<td style="text-align:center">' . $v['c5'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c6'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c7'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c8'] . '</td>';
-                            echo '<td style="text-align:center">' . $v['c9'] . '</td>';
                             echo '<td style="text-align:center">' . $v['total'] . '</td>';
                             echo '</tr>';
                         } ?>

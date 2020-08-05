@@ -34,49 +34,30 @@
                         <small>Penilaian</small>
                     </div>
                     <div class="form-group col-md-4">
-                        <label>Kualitas Kerja</label>
-                        <input type="number" class="form-control" name="c1" placeholder="Enter Kualitas Kerja" required>
+                        <label>Pengiriman CV</label>
+                        <input type="number" class="form-control" name="c1" placeholder="Masukkan Pengiriman CV" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Kuantitas Kerja</label>
-                        <input type="number" class="form-control" name="c2" placeholder="Enter Kuantitas Kerja" required>
+                        <label>Kehadiran Diseluruh Rangkaian Acara</label>
+                        <input type="number" class="form-control" name="c2" placeholder="Masukkan Kehadiran Diseluruh Rangkaian Acara" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Inisiatif Kerja</label>
-                        <input type="number" class="form-control" name="c3" placeholder="Enter Inisiatif Kerja" required>
+                        <label>Pembuatan Script</label>
+                        <input type="number" class="form-control" name="c3" placeholder="Masukkan Pembuatan Script" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Disiplin Kerja</label>
-                        <input type="number" class="form-control" name="c4" placeholder="Enter Disiplin Kerja" required>
+                        <label>Video Siaran</label>
+                        <input type="number" class="form-control" name="c4" placeholder="Masukkan Video Siaran" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label>Tanggung Jawab pada Pekerjaan</label>
-                        <input type="number" class="form-control" name="c5" placeholder="Tanggung Jawab pada Pekerjaan" required>
+                        <label>Kelengkapan Diary ORAKOM</label>
+                        <input type="number" class="form-control" name="c5" placeholder="Masukkan Kelengkapan Diary ORAKOM" required>
                     </div>
 
-                    <div class="form-group col-md-4">
-                        <label>Disiplin Kerja</label>
-                        <input type="number" class="form-control" name="c6" placeholder="Motivasi Kerja" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Disiplin Kerja</label>
-                        <input type="number" class="form-control" name="c7" placeholder="Motivasi dalam Bekerja" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Disiplin Kerja</label>
-                        <input type="number" class="form-control" name="c8" placeholder="Pemahaman dalam Bekerja" required>
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label>Disiplin Kerja</label>
-                        <input type="number" class="form-control" name="c9" placeholder="Penyesuaian Diri dalam Lingkungan" required>
-                    </div>
                 </div>
 
                 <div class="box-footer">

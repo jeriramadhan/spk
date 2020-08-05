@@ -17,13 +17,13 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
             <!-- ini fungsi bikin menu -->
-            <li><a href="<?= site_url('menu') ?>"><i class="fa fa-user"></i> <span>Home</span></a></li>
+            <li><a href="<?= site_url('menu') ?>"><i class="fa fa-home"></i> <span>Home</span></a></li>
             <li><a href="<?= site_url('menu/pendaftar') ?>"><i class="fa fa-user"></i> <span>Pendaftar</span></a></li>
-            <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-user"></i> <span>Mahasiswa</span></a></li>
+            <li><a href="<?= site_url('mahasiswa') ?>"><i class="fa fa-hourglass"></i> <span>Scoring Mahasiswa</span></a></li>
             <li><a href="<?= site_url('kriteria/keterangan') ?>"><i class="fa fa-file-pdf-o"></i> <span>Kriteria</span></a></li>
             <li><a href="<?= site_url('kriteria') ?>"><i class="fa fa-file-pdf-o"></i> <span>Atribut</span></a></li>
-            <li><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-user"></i> <span>Hasil</span></a></li>            
-            <li><a href="<?= site_url('menu/ranking') ?>"><i class="fa fa-user"></i> <span>Ranking</span></a></li>
+            <li><a href="<?= site_url('menu/hasil') ?>"><i class="fa fa-list-ol"></i> <span>Hasil</span></a></li>            
+            <li><a href="<?= site_url('menu/ranking') ?>"><i class="fa   fa-line-chart"></i> <span>Ranking</span></a></li>
                     <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
@@ -39,8 +39,7 @@
             
           </ul>
         </li>
-            <li><a href="<?= site_url('login/logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li>
-             <!-- sampe sini, lu bikin dari tag <li> sampe </li> sesuai sama menu yang lu inginkan  -->
+           <!-- <li><a href="<?= site_url('login/logout') ?>"><i class="fa fa-user"></i> <span>Logout</span></a></li> -->
         </ul>
     </section>
     <!-- /.sidebar -->
