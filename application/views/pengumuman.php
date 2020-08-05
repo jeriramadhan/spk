@@ -65,6 +65,8 @@
         <li>C adalah indikator penilaian</li>
         <li>Total adalah akumulasi nilai dari tiap indikator</li>
         <li>Ranking adalah hasil urutan penilaian</li>
+<br><br>
+        <li>Ini Coba Push</li>
 
     </section>
      <?php    } else { ?>
