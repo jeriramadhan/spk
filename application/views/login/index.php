@@ -13,7 +13,7 @@
             <label for="login-username">Username</label>
             <input type="text" class="form-control" id="login-username" placeholder="Username" name="username" required>
             <label for="login-password">Password</label>
-            <input type="password" class="form-control" id="login-password" name="password" required>
+            <input type="password" class="form-control" id="login-password" placeholder="Password" name="password" required>
 
           </div>
           <button type="submit" class="btn btn-primary">Login</button>
