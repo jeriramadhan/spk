@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            Mahasiswa
+            Penilaian Pendaftar
         </h1>
         <ol class="breadcrumb">
             <li><a href="#">Mahasiswa</a></li>
